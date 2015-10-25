@@ -1,0 +1,26 @@
+/* This is taken from projecteuler.net.
+*
+*If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9. 
+*The sum of these multiples is 23.
+*Find the sum of all the multiples of 3 or 5 below 1000.
+*/
+
+//I like this one because it's a good beginner's demonstration of how mod is used. 
+
+
+public class EulerOne {
+
+  public static void main(String[] args) {
+
+    int solution = 0;
+
+    for (int calc = 0; calc < 1000; calc++) {
+    if (calc % 3 == 0 || calc % 5 == 0) {
+    solution = solution + calc;
+    }
+    }
+
+  System.out.println (solution);
+ }
+
+}
